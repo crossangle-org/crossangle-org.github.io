@@ -10,5 +10,5 @@ main:
     url: /tags/
   # - title: "Posts"
   #   url: /year-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  # - title: "Sitemap"
+  #   url: /sitemap/
