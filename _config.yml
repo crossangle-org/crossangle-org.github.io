@@ -291,9 +291,11 @@ defaults:
       share: true
       related: true
 
-
-navigation:
-  - title: Posts
-    url: /posts/
-  - title: Categories
-    url: /categories/
+sidebar:
+  - title: "Posts"
+    layout: "posts"
+    author_profile: false
+    sort_order: reverse
+  - title: "Categories"
+    layout: "categories"
+    author_profile: false
