@@ -290,12 +290,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-sidebar:
-  - title: "Posts"
-    layout: "posts"
-    author_profile: false
-    sort_order: reverse
-  - title: "Categories"
-    layout: "categories"
-    author_profile: false
