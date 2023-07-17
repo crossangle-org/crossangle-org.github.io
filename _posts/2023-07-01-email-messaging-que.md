@@ -8,9 +8,9 @@ tags:
   - stmp
 toc: true
 toc_label: "목차"
+toc_sticky: true
 ---
 
-# 메세징 큐를 사용한 이메일 전송 아키텍처
 
 ## 들어가며
 
