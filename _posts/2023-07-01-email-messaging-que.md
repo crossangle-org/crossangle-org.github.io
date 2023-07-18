@@ -1,15 +1,18 @@
 ---
 title:  "메세징 큐를 사용한 이메일 전송 아키텍처"
-classes: wide
 categories: 
   - backend
 tags:
   - email
   - stmp
 toc: true
+toc_icon: desktop
 toc_label: "목차"
 toc_sticky: true
 ---
+<div style="text-align: right;"><span style="font-size: 13px;">작성자: 김준영</span></div>
+
+
 
 
 ## 들어가며
