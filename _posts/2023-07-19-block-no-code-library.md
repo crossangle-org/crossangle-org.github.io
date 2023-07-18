@@ -195,51 +195,53 @@ Jayway JsonPath는 이러한 JSONPath 표현식을 해석하고 실행하여 JSO
 예를들어 다음과 같은 Payload 문법도 가능해야 했습니다.
 
 ```json
-"merge": {
-  "prefix": "?",
-  "postfix": "",
-  "delimiter": "&",
-  "nodes": [
-    {
-      "merge": {
-        "delimiter": "=",
-        "nodes": [
-          {
-            "map": {
-              "name": "gasPrice"
+{
+  "merge": {
+    "prefix": "?",
+    "postfix": "",
+    "delimiter": "&",
+    "nodes": [
+      {
+        "merge": {
+          "delimiter": "=",
+          "nodes": [
+            {
+              "map": {
+                "name": "gasPrice"
+              }
+            },
+            {
+              "map": {
+                "value": "statusType"
+              }
             }
-          },
-          {
-            "map": {
-              "value": "statusType"
+          ]
+        }
+      },
+      {
+        "merge": {
+          "delimiter": "=",
+          "nodes": [
+            {
+              "map": {
+                "name": "details[1]::labels::name"
+              }
+            },
+            {
+              "map": {
+                "value": "value"
+              }
             }
-          }
-        ]
+          ]
+        }
+      },
+      {
+        "map": {
+          "default": "endTextTest"
+        }
       }
-    },
-    {
-      "merge": {
-        "delimiter": "=",
-        "nodes": [
-          {
-            "map": {
-              "name": "details[1]::labels::name"
-            }
-          },
-          {
-            "map": {
-              "value": "value"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "map": {
-        "default": "endTextTest"
-      }
-    }
-  ]
+    ]
+  }
 }
 ```
 
