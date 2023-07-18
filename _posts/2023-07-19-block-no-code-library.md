@@ -24,9 +24,9 @@ categories:
 
 블록체인에 대해 잘 모르고 다음 데이터들을 보고 있으면 무슨 데이터들인가 모르실것 같습니다.
 
-![그림1 polygon(POL) Block의 Transaction 데이터](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled.png)
+>그림1 polygon(POL) Block의 Transaction 데이터
+![](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled.png)
 
-그림1 polygon(POL) Block의 Transaction 데이터
 
 위 그림은 블록체인 네트워크인 메인넷에서 1차 가공된 Block Transaction 정보입니다. 
 
@@ -60,13 +60,14 @@ categories:
 
 아래 그림은 데이터 가공 및 정제 처리를 위해 블록의 각종 데이터의 해시 값을 DB에서 가져온 뒤, 애플리케이션에서 디코딩하는 예제 코드입니다.
 
-![그림2 Block 데이터를 Decode 처리1](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%201.png)
+> 그림2 Block 데이터를 Decode 처리1
+![](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%201.png)
 
-그림2 Block 데이터를 Decode 처리1
 
-![그림3 Block 데이터를 Decode 처리2](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%202.png)
 
-그림3 Block 데이터를 Decode 처리2
+> 그림3 Block 데이터를 Decode 처리2
+![](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%202.png)
+
 
 너무 간단하기도 하지만 문제는 지금부터 입니다..
 
@@ -78,9 +79,8 @@ categories:
 
 아래 그림은 위키에서 검색한 토큰 및 블록체인의 종류입니다.
 
-![그림4 토큰 및 블록체인 종류](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%203.png)
-
-그림4 토큰 및 블록체인 종류
+>그림4 토큰 및 블록체인 종류
+![](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%203.png)
 
 한 가지 블록체인을 해석 하더라도, 블록에 포함된 Transaction 데이터는 Contract ABI에 따라 데이터 해석 위치와 방법이 달라집니다. 또한, 몇 개의 Contract ABI를 운 좋게 얻더라도, 수십 개 또는 수백 개의 다른 Contract에 대한 블록 데이터를 처리하려면 코드를 개발해야 합니다.
 
@@ -88,9 +88,9 @@ categories:
 
 예를들면 다음과 같습니다.
 
-![그림5 polygon transaction input data](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%204.png)
+>그림5 polygon transaction input data
+![](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%204.png)
 
-그림5 polygon transaction input data
 
 다음과 같은 Block Transaction Input data가 있다고 가정했을 때, 해석하는 방법의 종류는 여러 가지가 있지만 자주 사용하는 방법은 다음과 같습니다.
 
@@ -100,17 +100,18 @@ categories:
 
 우선 input data를 분석하면...
 
+>그림6 transaction input data 분석결과
 ![그림6 transaction input data 분석결과](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%205.png)
 
-그림6 transaction input data 분석결과
+
 
 다음과 같이 특정 자리수마다 데이터를 잘라서 다른 split 데이터를 디코딩해야 한다는 결론이 나왔습니다.
 
 디코딩된 결과는 다음과 같습니다.
 
+>그림7 transaction input data decode 결과
 ![그림7 transaction input data decode 결과](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%206.png)
 
-그림7 transaction input data decode 결과
 
 드디어 뭔가 의미 있는 데이터들이 나오기 시작했습니다. (여기서 무언가를 더 해야 되긴 하지만..)
 
@@ -150,9 +151,10 @@ Jayway JsonPath는 이러한 JSONPath 표현식을 해석하고 실행하여 JSO
 
 # Sequence flow
 
+>그림8 자동 변환 library 시퀀스 플로우
 ![그림8 자동 변환 library 시퀀스 플로우](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%207.png)
 
-그림8 자동 변환 library 시퀀스 플로우
+
 
 1. admin에서 새로운 Block이나 Contract의 새로운 형태의 데이터 포맷에 대한 payload를 저장
 (payload는 백엔드팀에서 만든 문법으로 해당 문법을 익힌 상태에서의 기획자, 개발자 등등 누구나 만들수 있도록 개발)
@@ -249,17 +251,19 @@ Jayway JsonPath는 이러한 JSONPath 표현식을 해석하고 실행하여 JSO
 
 또한 구동 방식은 B-tree 탐색 구조로 Payload 문법의 순서를 보장 하여 정상 수행토록 설계 되었습니다.
 
+>그림9 Library composite 구조
 ![그림9 Library composite 구조](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%208.png)
 
-그림9 Library composite 구조
 
-# 완성 된 예제
+
+# 동작 방식
 
 Payload 설정을 통해 간단한 4가지 예제를 살펴보면..
 
+>그림10 변환 설정 파일 Payload
 ![그림10 변환 설정 파일 Payload](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%209.png)
 
-그림10 변환 설정 파일 Payload
+
 
 test_1_mapping 문법내용대로 변환해야할 데이터(테스트용)의 구조의 어떤 곳을 참조 하는지 보도록 합시다.
 
@@ -267,9 +271,10 @@ test_1_mapping 문법내용대로 변환해야할 데이터(테스트용)의 구
 
 **“transaction2”** 값이 나와야 합니다.
 
+>그림11 실제 Block data (테스트용) 1
 ![그림11 실제 Block data (테스트용) 1](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2010.png)
 
-그림11 실제 Block data (테스트용) 1
+
 
 payload의 test_2_mapping & test_3_trim의 데이터를 보도록 합시다
 
@@ -281,23 +286,26 @@ test_3_trim은  method의 정보를 맵핑 하기 전에 trim을 통한 빈문�
 
 **“Start”**
 
+>그림12 실제 Block data (테스트용) 2
 ![그림12 실제 Block data (테스트용) 2](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2011.png)
 
-그림12 실제 Block data (테스트용) 2
+
 
 마지막 예제인 test_4_join은 details의 배열 전체에서 hash 값 사이에 “,”을 넣어 순서대로 맵핑 하여
 
 **“0x11111,0x22222”** 가 나와야 합니다.
 
+>그림13 실제 Block data (테스트용) 3
 ![그림13 실제 Block data (테스트용) 3](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2012.png)
 
-그림13 실제 Block data (테스트용) 3
+
 
 Library를 통한 결과값은 다음과 같이 정상적으로 맵핑 되어 출력 되는것을 볼수 있습니다.
 
+>그림14 mapping 완료 된 결과값
 ![그림14 mapping 완료 된 결과값](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2013.png)
 
-그림14 mapping 완료 된 결과값
+
 
 # 결과
 
@@ -311,4 +319,5 @@ Library를 통한 결과값은 다음과 같이 정상적으로 맵핑 되어 �
 
 쟁글의 Explorer 스쿼드는 블록체인 관련 대용량 데이터를 핸들링 하고 서비스 하고 있습니다. 다양한 결합도 높은 기술을 적용하여 고가용성, 고성능, 동시성 트래픽 처리를 통해 사용자에게 서비스를 제공 하고 있으며, 쟁글의  견고한 인프라 위에서 높은 기술력을 자랑하고 있습니다.
 
-국내에서는 이정도의 블록체인 트래픽 처리 시스템과 그에 따른 대용량 데이터 처리, 견고한 프로젝트 structure, 아키텍쳐 시스템 설계 지식 및 말도 안되는 트래픽과 데이터등을 처리함으로 나타나는 다양한 트러블 슈팅 경험은 다른회사에서 겪지 못할것이라고 자신합니다.
+국내에서는 이정도의 블록체인 트래픽 처리 시스템과 그에 따른 대용량 데이터 처리, 견고한 프로젝트 structure, 아키텍쳐 시스템 설계 지식 및 말도 안되는 트래픽과 데이터등을 처리함으로 나타나는 다양한 트러블 슈팅 경험은 다른 곳에서 쉽게 겪지 못할 경험입니다.
+
