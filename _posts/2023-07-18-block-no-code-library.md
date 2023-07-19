@@ -25,7 +25,7 @@ toc_sticky: true
 블록체인에 대해 잘 모르고 다음 데이터들을 보고 있으면 무슨 데이터들인가 모르실것 같습니다.
 
 >그림1 polygon(POL) Block의 Transaction 데이터
-![그림1 polygon(POL) Block의 Transaction 데이터](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled.png)
+![그림1 polygon(POL) Block의 Transaction 데이터](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled.png)
 
 
 
@@ -62,11 +62,11 @@ toc_sticky: true
 아래 그림은 데이터 가공 및 정제 처리를 위해 블록의 각종 데이터의 해시 값을 DB에서 가져온 뒤, 애플리케이션에서 디코딩하는 예제 코드입니다.
 
 >그림2 Block 데이터를 Decode 처리1
-![그림2 Block 데이터를 Decode 처리1](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%201.png)
+![그림2 Block 데이터를 Decode 처리1](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%201.png)
 
 
 >그림3 Block 데이터를 Decode 처리2
-![그림3 Block 데이터를 Decode 처리2](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%202.png)
+![그림3 Block 데이터를 Decode 처리2](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%202.png)
 
 
 
@@ -81,7 +81,7 @@ toc_sticky: true
 아래 그림은 위키에서 검색한 토큰 및 블록체인의 종류입니다.
 
 >그림4 토큰 및 블록체인 종류
-![그림4 토큰 및 블록체인 종류](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%203.png)
+![그림4 토큰 및 블록체인 종류](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%203.png)
 
 
 
@@ -92,7 +92,7 @@ toc_sticky: true
 예를들면 다음과 같습니다.
 
 >그림5 polygon transaction input data
-![그림5 polygon transaction input data](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%204.png)
+![그림5 polygon transaction input data](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%204.png)
 
 
 
@@ -105,7 +105,7 @@ toc_sticky: true
 우선 input data를 분석하면...
 
 >그림6 transaction input data 분석결과
-![그림6 transaction input data 분석결과](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%205.png)
+![그림6 transaction input data 분석결과](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%205.png)
 
 
 
@@ -114,7 +114,7 @@ toc_sticky: true
 디코딩된 결과는 다음과 같습니다.
 
 >그림7 transaction input data decode 결과
-![그림7 transaction input data decode 결과](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%206.png)
+![그림7 transaction input data decode 결과](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%206.png)
 
 
 
@@ -157,7 +157,7 @@ Jayway JsonPath는 이러한 JSONPath 표현식을 해석하고 실행하여 JSO
 ## Sequence flow
 
 >그림8 자동 변환 library 시퀀스 플로우
-![그림8 자동 변환 library 시퀀스 플로우](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%207.png)
+![그림8 자동 변환 library 시퀀스 플로우](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%207.png)
 
 
 
@@ -257,7 +257,7 @@ Jayway JsonPath는 이러한 JSONPath 표현식을 해석하고 실행하여 JSO
 또한 구동 방식은 B-tree 탐색 구조로 Payload 문법의 순서를 보장 하여 정상 수행토록 설계 되었습니다.
 
 >그림9 Library composite 구조
-![그림9 Library composite 구조](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%208.png)
+![그림9 Library composite 구조](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%208.png)
 
 
 
@@ -266,7 +266,7 @@ Jayway JsonPath는 이러한 JSONPath 표현식을 해석하고 실행하여 JSO
 Payload 설정을 통해 간단한 4가지 예제를 살펴보면..
 
 >그림10 변환 설정 파일 Payload
-![그림10 변환 설정 파일 Payload](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%209.png)
+![그림10 변환 설정 파일 Payload](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%209.png)
 
 
 
@@ -277,7 +277,7 @@ test_1_mapping 문법내용대로 변환해야할 데이터(테스트용)의 구
 **“transaction2”** 값이 나와야 합니다.
 
 >그림11 실제 Block data (테스트용) 1
-![그림11 실제 Block data (테스트용) 1](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2010.png)
+![그림11 실제 Block data (테스트용) 1](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%2010.png)
 
 
 
@@ -292,7 +292,7 @@ test_3_trim은  method의 정보를 맵핑 하기 전에 trim을 통한 빈문�
 **“Start”**
 
 >그림12 실제 Block data (테스트용) 2
-![그림12 실제 Block data (테스트용) 2](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2011.png)
+![그림12 실제 Block data (테스트용) 2](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%2011.png)
 
 
 
@@ -301,14 +301,14 @@ test_3_trim은  method의 정보를 맵핑 하기 전에 trim을 통한 빈문�
 **“0x11111,0x22222”** 가 나와야 합니다.
 
 >그림13 실제 Block data (테스트용) 3
-![그림13 실제 Block data (테스트용) 3](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2012.png)
+![그림13 실제 Block data (테스트용) 3](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%2012.png)
 
 
 
 Library를 통한 결과값은 다음과 같이 정상적으로 맵핑 되어 출력 되는것을 볼수 있습니다.
 
 >그림14 mapping 완료 된 결과값
-![그림14 mapping 완료 된 결과값](http://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-18/Untitled%2013.png)
+![그림14 mapping 완료 된 결과값](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-18/Untitled%2013.png)
 
 
 
