@@ -3,8 +3,8 @@ title:  "메세징 큐를 사용한 이메일 전송 아키텍처"
 categories: 
   - backend
 tags:
-  - email
-  - stmp
+  - SMTP
+  - Python
 toc: true
 toc_icon: desktop
 toc_label: "목차"
