@@ -3,8 +3,8 @@ title:  "Block 데이터 처리를 위해 랭기지를 만든 이유"
 categories:
   - backend
 tags:
-  - blockchain
-  - bigdata
+  - Blockchain
+  - Java
 toc: true
 toc_icon: desktop
 toc_label: "목차"
