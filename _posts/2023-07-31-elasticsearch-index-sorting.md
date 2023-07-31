@@ -12,8 +12,6 @@ categories:
 ---
 <div style="text-align: right;"><span style="font-size: 13px;">작성자: 조원익</span></div>
 
-# Elasticsearch Index sorting 을 활용한 성능 개선
-
 # 성능 테스트 목표!
 
 **Transaction List API 의 성능 테스트**를 하고자 합니다.
