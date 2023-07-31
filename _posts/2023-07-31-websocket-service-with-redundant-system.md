@@ -103,13 +103,10 @@ public void receiveTicker() {
 		String reqData = "{'type':'ticker', 'symbol':'BTCKRW'}";
 		c.execute(url, session -> {
 				Mono<Void> init = session.send(Flux.just(session.textMessage(reqData)));
-
 				Flux<WebSocketMessage> outStream = ...;
-
 				Flux<String> data = session.receive()
 						.map(WebSocketMessage::getPayloadAsText)
 						.doOnNext(this::doData).then();
-
 				Mono<Void> send = session.send(outStream);
 				return Flux.merge(send, data, init).then();
 			}
