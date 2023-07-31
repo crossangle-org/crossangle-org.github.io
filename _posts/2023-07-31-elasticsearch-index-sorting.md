@@ -155,7 +155,7 @@ PUT polygon-transaction
 - VUser: 6000명
 - **TPS: 357**
 
-![Untitled](Ehttps://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/es-04.png)
+![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/es-04.png)
 
 - VUser: 10000명
 - **TPS: 360**
