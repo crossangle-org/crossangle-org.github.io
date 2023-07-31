@@ -2,10 +2,10 @@
 title:  "ABI 기반 데이터 인덱싱"
 categories:
   - backend
-  - blockchain
 tags:
   - ABI
   - Indexing
+  - BlockChain
 toc: true
 toc_icon: desktop
 toc_label: "목차"
@@ -13,8 +13,6 @@ toc_sticky: true
 ---
 <div style="text-align: right;"><span style="font-size: 13px;">작성자: 이득윤</span></div>
 
-
-# ABI 기반 데이터 추출
 
 # 들어가며
 
@@ -40,7 +38,8 @@ ABI는 function과 event에 정보 그리고 각 인풋 파라미터, 아웃풋 
 ***그림 1) Smart Contract 컴파일 및 배포 과정***
 
 
-# ABI의 활용 1
+
+## ABI의 활용 1
 
 아래와 같이 솔리디티로 구현한 bar라는 function이 있다고 했을 때,
 
@@ -129,9 +128,10 @@ ABI는 이더리움 생태계에서 컨트랙트들과 상호작용을 할 때, 
 ***그림 2) ABI의 역할***
 
 
-# ABI의 활용 2
 
-## 원시데이터
+## ABI의 활용 2
+
+### 원시데이터
 
 블록체인에서는 block, log, transaction 등의 데이터가 발생합니다.
 
@@ -139,11 +139,13 @@ ABI는 이더리움 생태계에서 컨트랙트들과 상호작용을 할 때, 
 
 **그림 3) 원시데이터(Block Data) 예시**
 
+
+
 쟁글에서는 위와 같이 여러 블록체인에서 발생하는 데이터를 실시간으로 RDB에 인덱싱하고 있습니다.
 
 블록체인상에서 가공되지 않은 형태의 데이터를 **원시데이터**라고 부르겠습니다.
 
-## ABI기반 원시데이터 가공
+### ABI기반 원시데이터 가공
 
 ABI를 활용하면 EVM 상에서 실행된 수많은 event, function의 결과물들을 decoding 할 수 있게 됩니다.
 
@@ -158,6 +160,8 @@ ABI의 활용1 예제를 활용해서 어떻게 ABI를 통해서 function에서 
 ![Untitled](https://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-31/abi-03.png)
 
 **그림 4) blur exchange call function ABI 기반 데이터 인덱싱**
+
+
 
 call function 데이터만 인덱싱을 할 수 있는 건 아닙니다.
 
@@ -211,6 +215,8 @@ ABI를 통해서 Event에서 발생한 데이터를 인덱싱하는 과정은 �
 ![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/abi-04.png)
 
 **그림 5) Transfer event ABI 기반 데이터 인덱싱**
+
+
 
 # 맺으며
 
