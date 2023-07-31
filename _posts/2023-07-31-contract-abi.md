@@ -5,7 +5,7 @@ categories:
 tags:
   - ABI
   - Indexing
-  - BlockChain
+  - Blockchain
 toc: true
 toc_icon: desktop
 toc_label: "목차"
@@ -14,13 +14,13 @@ toc_sticky: true
 <div style="text-align: right;"><span style="font-size: 13px;">작성자: 이득윤</span></div>
 
 
-# 들어가며
+## 들어가며
 
 이더리움 네트워크에서 ABI는 컨트랙트에서 함수를 호출할 때, 어떤 함수를 호출할지를 지정하거나 우리가 생각한 output을 보장하기 위해서 필요합니다.
 
 이번 글에서는 먼저 ABI에 대해서 간단하게 알아본 후에, 제가 참여했던 ABI 기반 데이터 추출 프로젝트에 대해서 다뤄보려고 합니다.
 
-# ABI란?
+## ABI란?
 
 ABI란 Application Binary Interface의 약어로써, contract의 인터페이스를 나타내는 JSON 데이터입니다.
 
@@ -39,7 +39,7 @@ ABI는 function과 event에 정보 그리고 각 인풋 파라미터, 아웃풋 
 
 
 
-## ABI의 활용 1
+### ABI의 활용 1
 
 아래와 같이 솔리디티로 구현한 bar라는 function이 있다고 했을 때,
 
@@ -129,9 +129,9 @@ ABI는 이더리움 생태계에서 컨트랙트들과 상호작용을 할 때, 
 
 
 
-## ABI의 활용 2
+### ABI의 활용 2
 
-### 원시데이터
+#### 원시데이터
 
 블록체인에서는 block, log, transaction 등의 데이터가 발생합니다.
 
@@ -145,7 +145,7 @@ ABI는 이더리움 생태계에서 컨트랙트들과 상호작용을 할 때, 
 
 블록체인상에서 가공되지 않은 형태의 데이터를 **원시데이터**라고 부르겠습니다.
 
-### ABI기반 원시데이터 가공
+#### ABI기반 원시데이터 가공
 
 ABI를 활용하면 EVM 상에서 실행된 수많은 event, function의 결과물들을 decoding 할 수 있게 됩니다.
 
