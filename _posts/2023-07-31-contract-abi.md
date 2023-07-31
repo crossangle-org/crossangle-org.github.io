@@ -34,7 +34,6 @@ ABI에 대해서 이해하기 위해서는 선행적으로 solidity 컴파일 �
 ABI는 function과 event에 정보 그리고 각 인풋 파라미터, 아웃풋 파라미터에 대한 정보를 포함합니다.
 
 ![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/abi-00.png)
-
 ***그림 1) Smart Contract 컴파일 및 배포 과정***
 
 
@@ -124,7 +123,6 @@ byte를 해독하여 인간이 이해할 수 있는 결과물로 변환되는 �
 ABI는 이더리움 생태계에서 컨트랙트들과 상호작용을 할 때, encoding과 decoding에서 사용되는 스키마의 역할을 합니다.
 
 ![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/abi-01.png)
-
 ***그림 2) ABI의 역할***
 
 
@@ -136,7 +134,6 @@ ABI는 이더리움 생태계에서 컨트랙트들과 상호작용을 할 때, 
 블록체인에서는 block, log, transaction 등의 데이터가 발생합니다.
 
 ![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/abi-02.png)
-
 **그림 3) 원시데이터(Block Data) 예시**
 
 
@@ -158,7 +155,6 @@ ABI의 활용1 예제를 활용해서 어떻게 ABI를 통해서 function에서 
 - 그 데이터를 ABI와 매칭시키면서 parsing 하면, 아래와 같이 ABI 기반으로 인덱싱을 할 수 있게 됩니다.
 
 ![Untitled](https://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-31/abi-03.png)
-
 **그림 4) blur exchange call function ABI 기반 데이터 인덱싱**
 
 
@@ -213,15 +209,14 @@ ABI를 통해서 Event에서 발생한 데이터를 인덱싱하는 과정은 �
 - topic과 data를 ABI와 매칭시키면서 parsing 하면, 아래와 같이 ABI 기반으로 인덱싱을 할 수 있게 됩니다.
 
 ![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/abi-04.png)
-
 **그림 5) Transfer event ABI 기반 데이터 인덱싱**
 
 
 
-# 맺으며
+## 맺으며
 
 본 포스트에서는 ABI에 대한 개념과 ABI의 역할, 그리고 쟁글에서 활용 중인 ABI 기반 데이터 인덱싱에 대해서 알아보았습니다.
 
 블록체인 상의 데이터는 위와 같이 무궁무진한 방식으로 활용될 수 있습니다.
 
-블록체인에 대해서 관심이 많고 많은 양의 데이터를 다루고 싶다면, 쟁글이 좋은 선택지가 되리라 확신합니다.
+블록체인에 대해서 관심이 많고 본인이 백엔드 개발자로서 많은 대용량의 데이터를 다루고 싶다면, 쟁글이 좋은 선택지가 되리라 확신합니다.
