@@ -101,7 +101,6 @@ public void receiveTicker() {
 		WebSocketClient c = new ReactorNettyWebSocketClient();
 		String url = "https://www.exchange.com/websocket";
 		String reqData = "{'type':'ticker', 'symbol':'BTCKRW'}";
-
 		c.execute(url, session -> {
 				Mono<Void> init = session.send(Flux.just(session.textMessage(reqData)));
 
