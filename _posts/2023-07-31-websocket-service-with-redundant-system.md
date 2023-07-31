@@ -95,7 +95,7 @@ toc_sticky: true
 
 우선은 거래소의 시세정보를 받아오는 코드입니다. 거래소에 지정된 자산에 대한 실시간 시세를 subscribe 하면 수신된 메시지를 `doData` 에서 처리해 퍼블리싱 합니다.
 
->[코드 1] 시세정보 수신
+>[코드 1] 시세정보 수신 
 ```java
 public void receiveTicker() {
 		WebSocketClient c = new ReactorNettyWebSocketClient();
@@ -185,8 +185,8 @@ public void doData(String message) {
 	// message 정제 및 처리 로직 시작
 	...
 	// message 정제 및 처리 로직 끝
-  String key = getHashData(returnMessage);  // 해쉬 함수를 구현하면 됩니다.
-  boolean isNotPublished = RedisTemplate.opsForValue().setIfAbsent(key, returnMessage, 300L, TimeUnit.SECONDS);
+	String key = getHashData(returnMessage);  // 해쉬 함수를 구현하면 됩니다.
+	boolean isNotPublished = RedisTemplate.opsForValue().setIfAbsent(key, returnMessage, 300L, TimeUnit.SECONDS);
 	if (isNotPublished) {
 		RedisTemplate.convertAndSend("웹소켓서비스", returnMessage);
 	}
