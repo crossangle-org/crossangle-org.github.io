@@ -10,7 +10,7 @@ toc_icon: desktop
 toc_label: "목차"
 toc_sticky: true
 ---
-<div style="text-align: right;"><span style="font-size: 13px;">작성자: 김준영</span></div>
+<div style="text-align: right;"><span style="font-size: 13px;">Data Platform 김준영</span></div>
 
 
 

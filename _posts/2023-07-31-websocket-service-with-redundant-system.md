@@ -14,7 +14,7 @@ toc_icon: desktop
 toc_label: "목차"
 toc_sticky: true
 ---
-<div style="text-align: right;"><span style="font-size: 13px;">작성자: 조상욱</span></div>
+<div style="text-align: right;"><span style="font-size: 13px;">Web3 Finance 조상욱</span></div>
 
 ## 다중화 시스템하에서의 웹소켓 퍼블리싱 처리
 

@@ -10,7 +10,7 @@ toc_icon: desktop
 toc_label: "목차"
 toc_sticky: true
 ---
-<div style="text-align: right;"><span style="font-size: 13px;">작성자: 이다빈</span></div>
+<div style="text-align: right;"><span style="font-size: 13px;">Explorer 이다빈</span></div>
 
 # 🤔 왜 무중단 배포를 해야할까?
 

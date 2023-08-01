@@ -10,7 +10,7 @@ toc_icon: desktop
 toc_label: "목차"
 toc_sticky: true
 ---
-<div style="text-align: right;"><span style="font-size: 13px;">작성자: 조원익</span></div>
+<div style="text-align: right;"><span style="font-size: 13px;">Explorer 조원익</span></div>
 
 # 성능 테스트 목표!
 
