@@ -157,7 +157,7 @@ ABI의 활용1 예제를 활용해서 어떻게 ABI를 통해서 function에서 
 - 쟁글에서는 원시데이터를 RDB의 형태로 인덱싱하고 있으니, transaction에서 to address가 해당 컨트랙트의 주소이고, transaction data의 첫 4byte가 **0xcdcd77c0**인 데이터를 조회하면 해당 TX에서 발생한 데이터를 확인할 수 있습니다.
 - 그 데이터를 ABI와 매칭시키면서 parsing 하면, 아래와 같이 ABI 기반으로 인덱싱을 할 수 있게 됩니다.
 
-![Untitled](https://upload.techblog.xangle.io.s3.amazonaws.com/2023/07-31/abi-03.png)
+![Untitled](https://s3.ap-northeast-2.amazonaws.com/upload.techblog.xangle.io/2023/07-31/abi-03.png)
 
 **그림 4) blur exchange call function ABI 기반 데이터 인덱싱**
 
